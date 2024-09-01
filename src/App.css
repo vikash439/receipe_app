@@ -67,3 +67,11 @@ select {
   border-radius: 8px;
   padding: 8px;
 }
+
+#search-bar::placeholder {
+  color: #888; 
+}
+
+#search-bar:focus::placeholder {
+  color: transparent; 
+}
