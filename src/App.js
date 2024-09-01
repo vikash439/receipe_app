@@ -59,6 +59,13 @@ function App() {
               id="search-bar"
               placeholder="Search Recipes Here"
               name="q"
+              style={{
+                color: "#000", // Text color
+                backgroundColor: "#fff", // Background color
+                // border: "1px solid #ddd", 
+                padding: "8px 12px",
+                borderRadius: "4px"
+              }}
               class="px-6 py-2 w-full rounded-md flex-1 outline-none bg-white"
               required=""
               value={query}
@@ -133,6 +140,11 @@ function App() {
 
             <option value="low-sodium">Low Sodium</option>
           </select>
+
+
+
+
+          
 
           {/* <select className='app-recipes mt-6 bg-white w-8/12 md:w-6/12 max-w-lg flex flex-col md:flex-row items-center justify-center border py-4 px-2 rounded-2xl shadow-2xl focus-within:border-gray-300'>
               <option value="">
