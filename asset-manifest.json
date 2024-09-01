@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/receipe_app/static/css/main.e40147d3.css",
+    "main.js": "/receipe_app/static/js/main.0a59c009.js",
+    "static/js/453.3f336ae9.chunk.js": "/receipe_app/static/js/453.3f336ae9.chunk.js",
+    "index.html": "/receipe_app/index.html",
+    "main.e40147d3.css.map": "/receipe_app/static/css/main.e40147d3.css.map",
+    "main.0a59c009.js.map": "/receipe_app/static/js/main.0a59c009.js.map",
+    "453.3f336ae9.chunk.js.map": "/receipe_app/static/js/453.3f336ae9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e40147d3.css",
+    "static/js/main.0a59c009.js"
+  ]
+}
