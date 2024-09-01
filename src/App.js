@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 class="my-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+      {/* <h1 class="my-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
         <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
           RELICIOUS
         </span>{" "}
@@ -36,7 +36,17 @@ function App() {
       </h1>
       <h3 class="text-lg font-semibold font-mono text-pink-500 ">
         Find Recipes and Meals for your Ingredients
-      </h3>
+      </h3> */}
+    <h1 className="text-3xl font-extrabold text-white bg-black bg-opacity-60 border border-white rounded-lg p-2 md:text-5xl lg:text-6xl w-full text-center">
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-sky-400">
+        RELICIOUS
+      </span>{" "}
+      RECIPES
+    </h1>
+    <h3 className="text-lg font-semibold font-mono text-pink-500 bg-black bg-opacity-60 border border-pink-500 rounded-lg p-2 inline-block text-center mt-4">
+      Find Recipes and Meals for your Ingredients
+    </h3>
+
       {/* <h1 onClick={getRecipes}>RELICIOUS</h1> */}
 
       <form className="recipie-search flex" onSubmit={onSubmit}>
@@ -47,7 +57,7 @@ function App() {
           >
             <input
               id="search-bar"
-              placeholder="search recipes here"
+              placeholder="Search Recipes Here"
               name="q"
               class="px-6 py-2 w-full rounded-md flex-1 outline-none bg-white"
               required=""
@@ -71,7 +81,7 @@ function App() {
             onChange={(e) => sethealthLabel(e.target.value)}
             className="app-recipes mt-6 bg-white w-8/12 md:w-6/12 max-w-lg flex flex-col md:flex-row items-center justify-center border py-4 px-2 rounded-2xl shadow-2xl focus-within:border-gray-300"
           >
-            <option value="fish-free">Choose health label</option>
+            <option value="fish-free">Choose Health Label</option>
 
             <option value="lupine-free">Any</option>
 
@@ -109,7 +119,7 @@ function App() {
             onChange={(e) => setdietLabel(e.target.value)}
             className="app-recipes mt-6 bg-white w-8/12 md:w-6/12 max-w-lg flex flex-col md:flex-row items-center justify-center border py-4 px-2 rounded-2xl shadow-2xl focus-within:border-gray-300"
           >
-            <option value="low-fat">Choose diet label</option>
+            <option value="low-fat">Choose Diet Label</option>
 
             <option value="balanced">Balanced</option>
 
@@ -167,7 +177,7 @@ function App() {
         <input className="submit" type="submit" value="Search" />  
       </form> */}
 
-      <div className="flex flex-wrap w-11/12 m-auto gap-8">
+      <div className="flex flex-wrap w-11/12 m-auto gap-8 justify-center ">
         {recipes.map((recipe) => {
           return <RecipeTile recipe={recipe} />;
         })}
