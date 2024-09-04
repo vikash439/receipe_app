@@ -43,7 +43,7 @@ function App() {
       </span>{" "}
       RECIPES
     </h1>
-    <h3 className="text-lg font-semibold font-mono text-rose-600 bg-black bg-opacity-60 border border-rose-900 rounded-lg p-2 inline-block text-center mt-4">
+    <h3 className="text-lg font-semibold font-mono text-orange-500 bg-black bg-opacity-60 border border-orange-700 rounded-lg p-2 inline-block text-center mt-4">
       Find Recipes and Meals for your Ingredients
     </h3>
 
