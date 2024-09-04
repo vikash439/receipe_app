@@ -5,7 +5,7 @@ function RecipeTile({ recipe }) {
 
   return (
     <div className="flex items-baseline">
-      <div className="max-w-xs bg-white border-2 border-gray-200 rounded-2xl shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-rose-600 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-rose-600">
+      <div className="max-w-xs bg-white border-2 border-gray-200 rounded-2xl shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-orange-600 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-orange-600">
         <img
           className="rounded-t-2xl m-auto rounded-2xl w-full"
           src={recipe["recipe"]["image"]}
@@ -28,7 +28,7 @@ function RecipeTile({ recipe }) {
           </p>
           <a
             href={recipe["recipe"]["url"]}
-            className="font-mono inline-flex relative items-center px-3 py-2 text-[18px] md:font-sm font-semibold text-center text-black bg-rose-400 rounded-lg shadow-sm transition-colors duration-300 ease-in-out hover:bg-rose-500 hover:shadow-md focus:ring-4 focus:outline-none focus:ring-rose-300 dark:bg-rose-400 dark:hover:bg-rose-500 dark:focus:ring-rose-600"
+            className="font-mono inline-flex relative items-center px-3 py-2 text-[18px] md:font-sm font-semibold text-center text-black bg-orange-400 rounded-lg shadow-sm transition-colors duration-300 ease-in-out hover:bg-orange-500 hover:shadow-md focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-400 dark:hover:bg-orange-500 dark:focus:ring-orange-600"
             rel="noreferrer"
             target="_blank"
           >
