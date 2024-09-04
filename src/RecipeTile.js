@@ -5,22 +5,19 @@ function RecipeTile({ recipe }) {
 
   return (
     <div className="flex items-baseline">
-      {/* <img src={recipe["recipe"]["image"]} alt={recipe["recipe"]["label"]}/>
-        <p>{recipe["recipe"]["label"]}</p> */}
-
-      <div class="max-w-xs bg-white border border-gray-200 rounded-2xl shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="max-w-xs bg-white border-2 border-gray-200 rounded-2xl shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-rose-600 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-rose-600">
         <img
-          class="rounded-t-2xl m-auto rounded-2xl w-full"
+          className="rounded-t-2xl m-auto rounded-2xl w-full"
           src={recipe["recipe"]["image"]}
           alt=""
         />
 
-        <div class="p-5">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <div className="p-5">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {recipe["recipe"]["label"]}
           </h5>
 
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
             Meal Type : {recipe["recipe"]["mealType"]}
             <br />
             Cuisine : {recipe["recipe"]["cuisineType"]}
@@ -31,13 +28,13 @@ function RecipeTile({ recipe }) {
           </p>
           <a
             href={recipe["recipe"]["url"]}
-            class="font-mono inline-flex relative items-center px-3 py-2 text-[18px] md:font-sm font-semibold text-center text-black bg-pink-300 rounded-lg hover:bg-pink-400 focus:ring-4 focus:outline-none focus:ring-pink-200 dark:bg-pink-300 dark:hover:bg-pink-400 dark:focus:ring-pink-500"
+            className="font-mono inline-flex relative items-center px-3 py-2 text-[18px] md:font-sm font-semibold text-center text-black bg-rose-400 rounded-lg shadow-sm transition-colors duration-300 ease-in-out hover:bg-rose-500 hover:shadow-md focus:ring-4 focus:outline-none focus:ring-rose-300 dark:bg-rose-400 dark:hover:bg-rose-500 dark:focus:ring-rose-600"
             rel="noreferrer"
             target="_blank"
           >
             Get Recipe
             <svg
-              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -45,9 +42,9 @@ function RecipeTile({ recipe }) {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>
